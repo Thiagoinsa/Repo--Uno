@@ -1,0 +1,24 @@
+@import "_variables.scss";
+
+.carousel{
+    margin-bottom: 5rem;
+}
+.carousel-item img{
+    height: 100%;
+}
+.row{
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr{
+    margin: $hr-margin-y 0;
+    display: block;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: inset;
+}
+.featurette-divider{
+    margin: 5rem, 0;
+}

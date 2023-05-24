@@ -1,0 +1,25 @@
+.carousel {
+  margin-bottom: 5rem;
+}
+
+.carousel-item img {
+  height: 100%;
+}
+
+.row {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featurette-divider {
+        margin: 5rem, 0;
+}
+
+hr {
+        display: block;
+        unicode-bidi: isolate;
+        overflow: hidden;
+        border-style: inset;
+}

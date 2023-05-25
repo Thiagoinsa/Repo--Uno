@@ -1,3 +1,8 @@
+.icons-footer {
+  color: #212529;
+  font-size: 2rem;
+}
+
 .carousel {
   margin-bottom: 5rem;
 }
@@ -13,13 +18,13 @@
   margin-right: auto;
 }
 
-.featurette-divider {
-        margin: 5rem, 0;
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  overflow: hidden;
+  border-style: inset;
 }
 
-hr {
-        display: block;
-        unicode-bidi: isolate;
-        overflow: hidden;
-        border-style: inset;
+.featurette-divider {
+  margin: 5rem, 0;
 }

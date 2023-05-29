@@ -1,6 +1,15 @@
+.img-header-logo {
+  height: 2rem;
+  width: 1rem;
+}
+
 .icons-footer {
   color: #212529;
   font-size: 2rem;
+}
+
+.album {
+  background-color: rgba(0, 0, 0, 0.1215686275);
 }
 
 .carousel {
@@ -27,4 +36,8 @@ hr {
 
 .featurette-divider {
   margin: 5rem, 0;
+}
+
+.title-nov {
+  margin-bottom: 3.5rem;
 }

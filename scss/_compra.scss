@@ -1,0 +1,13 @@
+.compra-grid {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "img main"
+    "img main";
+        .carousel-compra { grid-area: img;}
+        .main-compra { grid-area: main;
+        margin-left: 6%;}
+
+}

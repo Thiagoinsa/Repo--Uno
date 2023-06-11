@@ -2,3 +2,32 @@
     height: 2rem;
     width: 1rem;
 }
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.nav-item{
+    .nav-link{
+        text-align: center;
+    }
+}
+.nav-icon{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+@media only screen and (max-width: 767.98px) {
+    .nav-icon{
+    display: inline;
+    text-align: start;
+    }
+    .nav-item{
+        .nav-link{
+            text-align: start;
+            }
+    }
+    
+}

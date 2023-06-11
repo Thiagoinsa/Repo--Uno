@@ -23,6 +23,9 @@
 .icons-redes{
     font-size: 4rem;
     color: #ff7f7f;
+    &:hover {
+        transform: traslatey(1rem);
+    }
 }
 .whatsapp { grid-area: whatsapp;}
 

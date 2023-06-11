@@ -4,10 +4,43 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    "img main"
     "img main";
         .carousel-compra { grid-area: img;}
         .main-compra { grid-area: main;
         margin-left: 6%;}
-
+}
+.list-beer{
+    direction: flex;
+    background-color: rgba(0, 255, 255, 0.256);
+    .item-beer{
+        direction: flex;
+        padding: 2%;
+        div{
+            direction: flex;
+        }
+        .img-beer{
+            direction: flex;
+            width: 7%;
+        }
+    }
+}
+@media only screen and (max-width: 767.98px) {
+    .compra-grid{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "img" "main";
+        }
+}
+@media only screen and (max-width: 310px) {
+    .compra-grid{
+        grid-template-columns: 100%;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-areas: "img" "main";
+        }
+    .compra-column{
+        flex-direction: column;
+    }
+    .list-compra{
+        padding-left: 0;
+    }
 }

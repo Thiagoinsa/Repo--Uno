@@ -3,6 +3,33 @@
   width: 1rem;
 }
 
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav-item .nav-link {
+  text-align: center;
+}
+
+.nav-icon {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .nav-icon {
+    display: inline;
+    text-align: start;
+  }
+  .nav-item .nav-link {
+    text-align: start;
+  }
+}
 .icons-footer {
   color: #212529;
   font-size: 2rem;
@@ -34,6 +61,10 @@
 .icons-redes {
   font-size: 4rem;
   color: #ff7f7f;
+}
+.icons-redes:hover {
+  -webkit-transform: traslatey(1rem);
+          transform: traslatey(1rem);
 }
 
 .whatsapp {
@@ -103,7 +134,7 @@
   grid-template-rows: 1.5fr 0.5fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "img main" "img main";
+  grid-template-areas: "img main";
 }
 .compra-grid .carousel-compra {
   grid-area: img;
@@ -113,8 +144,48 @@
   margin-left: 6%;
 }
 
+.list-beer {
+  direction: flex;
+  background-color: rgba(0, 255, 255, 0.256);
+}
+.list-beer .item-beer {
+  direction: flex;
+  padding: 2%;
+}
+.list-beer .item-beer div {
+  direction: flex;
+}
+.list-beer .item-beer .img-beer {
+  direction: flex;
+  width: 7%;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .compra-grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "img" "main";
+  }
+}
+@media only screen and (max-width: 310px) {
+  .compra-grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas: "img" "main";
+  }
+  .compra-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .list-compra {
+    padding-left: 0;
+  }
+}
 .body-404 {
   background-color: black;
+  z-index: -1;
 }
 .body-404 .section-404 .absolute {
   width: 100%;

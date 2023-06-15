@@ -130,8 +130,11 @@
 }
 .compra-grid {
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1.5fr 0.5fr;
+  grid-template-rows: 1fr 0.1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "img main";
@@ -144,33 +147,80 @@
   margin-left: 6%;
 }
 
-.list-beer {
-  direction: flex;
-  background-color: rgba(0, 255, 255, 0.256);
+.compra-beer {
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  background-image: url(../assets/img/ruta_de_la_imagen_1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
 }
-.list-beer .item-beer {
-  direction: flex;
-  padding: 2%;
+
+.nav-beer {
+  height: 20%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
-.list-beer .item-beer div {
+.nav-beer .list-beer {
   direction: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.list-beer .item-beer .img-beer {
+.nav-beer .list-beer .item-beer {
   direction: flex;
-  width: 7%;
+  padding: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav-beer .list-beer .item-beer :hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.nav-beer .list-beer .item-beer div {
+  direction: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.nav-beer .list-beer .item-beer .img-beer {
+  height: 230px;
+  width: auto;
+  padding-bottom: 1.2rem;
+}
+.nav-beer .list-beer .item-beer h5 {
+  padding-bottom: 1rem;
 }
 
 @media only screen and (max-width: 767.98px) {
   .compra-grid {
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
     grid-template-areas: "img" "main";
+  }
+  .list-beer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media only screen and (max-width: 310px) {
   .compra-grid {
     grid-template-columns: 100%;
-    grid-template-rows: 0.5fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
     grid-template-areas: "img" "main";
   }
   .compra-column {
@@ -282,4 +332,17 @@ hr {
 
 .title-nov {
   margin-bottom: 3.5rem;
+}
+
+.index-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
